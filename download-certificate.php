@@ -1,6 +1,6 @@
 <?php
 namespace Dompdf;
-require_once 'dompdf/autoload.inc.php';
+require_once '../admin/dompdf/autoload.inc.php';
 ob_start();
 $con=mysqli_connect("localhost", "root", "", "obcsdb");
 if(mysqli_connect_errno()){
@@ -86,7 +86,7 @@ while ($row=mysqli_fetch_array($ret)) { ?>
 
 <?php } ?>
 
-<p>THIS IS A COMPUTER GENERATED CERTIFICATE. </p>
+<p> </p>
 </body>
 </html>
 <?php
